@@ -136,15 +136,21 @@ nav.navbar.navbar-default {
 }
 
 /*---------social media-------*/
-#social{
+/*#social{
 	float: none;
     padding-top: 10px;
     padding-left: 36%;
+}*/
+#social{
+    margin:0;
+    padding: 0;
+    text-align: center;
 }
 #social li{
-	float: left; 
-	list-style: none; 
-	margin-left: 20px;
+    position: relative;
+    display: inline-block;
+    list-style: none;
+    line-height: 1;
 }
 .facebook{
  	text-indent:-9999px; 
@@ -223,14 +229,14 @@ a.btn.btn-primary.btn-outline.with-arrow{
     /* vertical-align: middle; */
     margin-top: 27px;
 }
-h2.fadeInUp {
+h2.tittel4{
     color: white;
     padding-bottom: 27px;
     font-weight: bold;
     font-size: 55px;
     font-family: 'Kaushan Script', cursive;
 }
-p.fadeInUp {
+p.tittel4{
     font-size: 18px;
     letter-spacing: 0.8px;
     line-height: 28px;
@@ -275,6 +281,7 @@ p.fadeInUp {
     cursor: pointer;
     display: inline-block;
     list-style: none;
+    padding-bottom: 10px;
 }
 #filters a {
     display: block !important;
@@ -286,6 +293,9 @@ p.fadeInUp {
     margin: 5px 5px;
     border-radius: 2px;
     font-family: 'Open Sans', sans-serif;
+}
+.portfolio-items {
+    margin: 32px;
 }
 .portfolio-item {
     position: relative;
@@ -317,7 +327,7 @@ p.fadeInUp {
     background: rgba(67, 150, 255, 0.9);
     height: 100%;
     opacity: 1;
-    display: none;
+    /*display: none;*/
 }
 .co-Itemproject {
     position: relative;
@@ -426,7 +436,7 @@ a.portfolio-link.hvr-icon-pop {
     top: 96px;
     left: 0;
 }
-.category.cat9 span a {
+.category.lbs5 span a {
     background: rgba(33, 150, 243, 0.71);
 }
 .category span a {
@@ -436,7 +446,7 @@ a.portfolio-link.hvr-icon-pop {
 }
 .category span {
     color: #FFF;
-    font-family: 'Montserrat', sans-serif;
+    font-family: ''Kaushan Script', cursive;
     text-transform: uppercase;
     font-size: 15px;
     display: inline-block;
@@ -448,11 +458,70 @@ img.img-thumbnail {
 
 
 /*---------parallax-block-6------------*/
-#parallax-block-6 {
-    padding: 100px 0;
+#explore{
+    padding: 3px 0 8px;
     color: #f8f8f8;
     background-color: #F05F40;
-    background-size: 20px;
+
+}
+.watch{
+    position: absolute;
+    left: 0;
+    top: 5%;
+}
+#explore h2 {
+    font-size: 30px;
+    text-transform: uppercase;
+    text-align: center;
+    font-family: 'Kaushan Script', cursive;
+    padding-left: 61px;
+    padding-top: 8px;
+}
+#countdown{
+    display: block;
+    overflow: hidden;
+    text-align: center;
+    padding: 0;
+}
+#countdown li{
+    list-style: none;
+    display: inline-block;
+    margin-right: 40px;
+    text-align: center;
+    text-transform: uppercase;
+    font-size: 18px;
+    position: relative; 
+}
+#countdown li .days {
+    background-color: #efc94c;
+    border-top: 1px solid #f2d470;
+    border-left: 1px solid #f2d470;
+}
+#countdown li .hours {
+    background-color: #df5a49;
+    border-top: 1px solid #e57b6d;
+    border-left: 1px solid #e57b6d;
+}
+#countdown li .minutes {
+    background-color: #45b29d;
+    border-top: 1px solid #6ac1b1;
+    border-left: 1px solid #6ac1b1;
+}
+#countdown li .seconds {
+    background-color: #e27a3f;
+    border-top: 1px solid #e89565;
+    border-left: 1px solid #e89565;
+}
+#countdown li span {
+    display: block;
+    font-size: 40px;
+    font-weight: 700;
+    height: 82px;
+    line-height: 79px;
+    width: 75px;
+    border-radius: 10px;
+    border-right: 1px solid #9e3e2e;
+    border-bottom: 1px solid #9e3e2e;
 }
 
 /*---------footer------------*/
